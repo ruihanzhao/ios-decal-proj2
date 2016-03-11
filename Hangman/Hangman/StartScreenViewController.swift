@@ -10,8 +10,10 @@ import UIKit
 
 class StartScreenViewController: UIViewController {
 
+    @IBOutlet weak var startImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        startImage.image = UIImage(named: "hangmanCover.gif")
 
         // Do any additional setup after loading the view.
     }
@@ -19,6 +21,9 @@ class StartScreenViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    @IBAction func unwindToStartScreenViewController(segue : UIStoryboardSegue) {
+        
     }
     
 
