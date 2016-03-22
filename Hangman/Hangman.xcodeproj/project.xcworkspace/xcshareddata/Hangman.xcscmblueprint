@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A77D1AAE1B1FD6EF3647C9713545E002798BBF59+++B3531BB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "A77D1AAE1B1FD6EF3647C9713545E002798BBF59+++BF493E6" : 0,
+    "A77D1AAE1B1FD6EF3647C9713545E002798BBF59+++483FA08" : 0,
+    "A77D1AAE1B1FD6EF3647C9713545E002798BBF59+++B3531BB" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "39AA01F6-B72D-4167-B7E5-7754A3CE6C6C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "A77D1AAE1B1FD6EF3647C9713545E002798BBF59+++BF493E6" : "",
+    "A77D1AAE1B1FD6EF3647C9713545E002798BBF59+++483FA08" : "",
+    "A77D1AAE1B1FD6EF3647C9713545E002798BBF59+++B3531BB" : "ios-decal-proj2\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Hangman",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Hangman\/Hangman.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/github.com\/ruihanzhao\/ios-decal-proj2.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A77D1AAE1B1FD6EF3647C9713545E002798BBF59+++483FA08"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/github.com\/ruihanzhao\/ios-decal-proj2.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A77D1AAE1B1FD6EF3647C9713545E002798BBF59+++B3531BB"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/iosdecal\/ios-decal-hw1.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A77D1AAE1B1FD6EF3647C9713545E002798BBF59+++BF493E6"
+    }
+  ]
+}

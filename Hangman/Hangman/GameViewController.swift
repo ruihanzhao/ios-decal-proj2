@@ -95,7 +95,7 @@ class GameViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.Default, handler: nil))
         self.presentViewController(alert, animated: true, completion: nil)
 
-    }
+    }       
     
     func displayLetters() {
 
