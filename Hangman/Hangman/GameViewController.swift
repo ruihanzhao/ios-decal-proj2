@@ -5,7 +5,6 @@
 //  Created by Shawn D'Souza on 3/3/16.
 //  Copyright © 2016 Shawn D'Souza. All rights reserved.
 //
-
 import UIKit
 
 class GameViewController: UIViewController {
@@ -22,7 +21,7 @@ class GameViewController: UIViewController {
     @IBOutlet weak var hangmanImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         let hangmanPhrases = HangmanPhrases()
         var phrase = hangmanPhrases.getRandomPhrase()
@@ -31,26 +30,27 @@ class GameViewController: UIViewController {
         loadSpaces()
         print(phrase)
         drawMarks()
-//        addTarget()
+        //        addTarget()
         hangmanImage.image = UIImage(named: "hangman1.gif")
     }
-
+    
     @IBAction func resetGame() {
         num = 0
         counter = 0
-        let hangmanPhrases = HangmanPhrases()
-        var phrase = hangmanPhrases.getRandomPhrase()
-        word = phrase
         wordArr.removeAll()
         secretWord.text = ""
         wordArr = [String]()
         incorrectGuesses.text = ""
+        let hangmanPhrases = HangmanPhrases()
+        var phrase = hangmanPhrases.getRandomPhrase()
+        word = phrase
         loadSpaces()
         print(phrase)
         drawMarks()
         hangmanImage.image = UIImage(named: "hangman1.gif")
-
+        
     }
+    
     @IBAction func guessed() {
         displayLetters()
         guessText.text = nil
@@ -91,14 +91,16 @@ class GameViewController: UIViewController {
                 return
             }
         }
-        let alert = UIAlertController(title: "Congratulations!", message: "Yay! You win!", preferredStyle: UIAlertControllerStyle.Alert)
-        alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.Default, handler: nil))
+        let alert = UIAlertController(title: "Congratulations!", message:nil, preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "Start Over", style: UIAlertActionStyle.Default, handler: nil))
+        alert.message = "Word: " + word
         self.presentViewController(alert, animated: true, completion: nil)
-
-    }       
+        resetGame()
+        
+    }
     
     func displayLetters() {
-
+        
         if (guessText.text == "") {
             return
         }
@@ -147,9 +149,11 @@ class GameViewController: UIViewController {
         }
         else if counter == 6 {
             hangmanImage.image = UIImage(named: "hangman7.gif")
-            let alert = UIAlertController(title: "You Lose", message: "Better luck next time!", preferredStyle: UIAlertControllerStyle.Alert)
-            alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.Default, handler: nil))
+            let alert = UIAlertController(title: "You Lose", message:nil, preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "Start Over", style: UIAlertActionStyle.Default, handler: nil))
+            alert.message = "Word: " + word
             self.presentViewController(alert, animated: true, completion: nil)
+            resetGame()
         }
     }
     override func didReceiveMemoryWarning() {
@@ -157,15 +161,15 @@ class GameViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     /*
     // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // Get the new view controller using segue.destinationViewController.
+    // Pass the selected object to the new view controller.
     }
     */
-
+    
 }
